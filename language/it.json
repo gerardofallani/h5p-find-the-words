@@ -1,0 +1,105 @@
+{
+  "semantics": [
+    {
+      "label": "Descrizione del compito",
+      "description": "Descrizione del gioco",
+      "default": "Trova le parole nel riquadro"
+    },
+    {
+      "label": "Lista di parole",
+      "description": "Lista di parole separate da virgola. Non sono ammessi caratteri speciali, spazi vuoti e numeri",
+      "default": "uno,due,tre",
+      "regexp": {}
+    },
+    {
+      "label": "Impostazioni di esecuzione",
+      "description": "Queste opzioni ti permettono di controllare il comportamento del gioco.",
+      "fields": [
+        {
+          "label": "Orientamenti",
+          "description": "Un array che contiene i nomi delle direzioni delle parole che dovrebbero essere usate quando si crea il gioco",
+          "fields": [
+            {
+              "label": "Orizzontale - da sinistra a destra"
+            },
+            {
+              "label": "Orizzontale - da destra a sinistra"
+            },
+            {
+              "label": "Verticale - direzione in basso"
+            },
+            {
+              "label": "Verticale - direzione in alto"
+            },
+            {
+              "label": "Diagonale - direzione in alto, da sinistra a destra"
+            },
+            {
+              "label": "Diagonale - direzione in basso, da destra a sinistra"
+            },
+            {
+              "label": "Diagonale - direzione in alto, da sinistra a destra"
+            },
+            {
+              "label": "Diagonale - direzione in alto, da destra a sinistra"
+            }
+          ]
+        },
+        {
+          "label": "Verticale - direzione in basso",
+          "description": "Gruppo di lettere a partire dal quale riempire gli spazi",
+          "default": "abcdefghijklmnopqrstuvwxy",
+          "regexp": {}
+        },
+        {
+          "label": "Preferisci sovrapposizione",
+          "description": "In base a questa opzione si decide come il trova parole posiziona un termine dentro al gioco. Se attivata, esso seleziona casualmente tra le posizioni il maggior numero di lettere che si sovrappongono, creando così un puzzle più compatto. Altrimenti, con una selezione casuale tra tutte le posizioni valide, si creerà un puzzle meno compatto."
+        },
+        {
+          "label": "Mostra vocabolario",
+          "description": "In base a questa opzione si decide se mostrare i vocabolari al giocatore"
+        },
+        {
+          "label": "Attiva mostra soluzione",
+          "description": "Aggiungi un pulsante che mostra la soluzione del gioco"
+        },
+        {
+          "label": "Attiva riprova",
+          "description": "Aggiungi un pulsante per riprovare il gioco"
+        }
+      ]
+    },
+    {
+      "label": "Localizzazione",
+      "fields": [
+        {
+          "label": "Testo per il pulsante \"Verifica\"",
+          "default": "Verifica"
+        },
+        {
+          "label": "Testo per il pulsante \"Riprova\"",
+          "default": "Riprova"
+        },
+        {
+          "label": "Testo per il pulsante \"Mostra soluzione\"",
+          "default": "Mostra soluzione"
+        },
+        {
+          "label": "Contatore di testo",
+          "default": "Trovato @found di @totalWords",
+          "description": "Testo di feedback, variabili disponibili: @found e @totalWords. Esempio: 'Trovato @found di @totalWords'"
+        },
+        {
+          "label": "Testo del tempo trascorso",
+          "default": "Tempo trascorso",
+          "description": "Etichetta che mostra il tempo trascorso durante lo svolgimento del gioco"
+        },
+        {
+          "label": "Testo di feedback",
+          "default": "Il tuo punteggio è @score di @total",
+          "description": "Testo di feedback, variabili disponibili: @score e @total. Esempio: 'Il tuo punteggio è @score di @total'"
+        }
+      ]
+    }
+  ]
+}
